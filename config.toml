@@ -1,4 +1,4 @@
 baseURL = "http://www.datadriventeam.org/"
 languageCode = "en-us"
 title = "Data-Driven Approach to User Feedback"
-theme = "ananke"
+theme = "book"
