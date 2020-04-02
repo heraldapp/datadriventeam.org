@@ -2,3 +2,8 @@ baseURL = "http://www.datadriventeam.org/"
 languageCode = "en-us"
 title = "Data-Driven Approach to User Feedback"
 theme = "book"
+enableGitInfo = true
+[params]
+  BookRepo = 'https://github.com/heraldapp/datadriventeam.org'
+[permalinks]
+  docs = "/d/:title/"
