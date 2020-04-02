@@ -7,7 +7,9 @@ weight: 999
 
 Neel and I are taking the ideas presented in this document and building Herald.
 
+{{< hint info >}}
 Herald [empowers teams to take a data-driven approach to user feedback](https://www.heraldhq.com). Herald is the [best tool for teams to collect, tag, share, and analyze user feedback to make data-driven decisions](https://www.heraldhq.com).
+{{< /hint >}}
 
 Herald is the best tool to implement a data-driven approach to user feedback because:
 
@@ -18,4 +20,6 @@ Herald is the best tool to implement a data-driven approach to user feedback bec
 
 We'd love for you to consider [Herald](https://www.heraldhq.com) — reach out and we'd love to help :)
 
+{{< hint info >}}
 Let us know if you have ideas to improve this guide — we are only an email away at hello@datadriventeam.org.
+{{< /hint >}}
