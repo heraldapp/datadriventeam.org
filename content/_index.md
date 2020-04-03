@@ -5,9 +5,8 @@ weight: 100
 
 # Introduction
 
-- [Jay A. Patel](https://twitter.com/jayisms)
-- [Nilkanth Patel](https://twitter.com/nilkanthjp)
-- Contact the authors at: `hello@datadriventeam.org`
+- [Jay A. Patel](https://twitter.com/jayisms) <<hello@datadriventeam.org>>
+- [Nilkanth Patel](https://twitter.com/nilkanthjp) <<hello@datadriventeam.org>>
 
 ## Preface
 
@@ -19,7 +18,7 @@ innovative companies understand their
 users](https://www.heraldhq.com/userstand/).
 
 {{< hint info >}}
-The ideas presented in this document can be implemented by scraping together a
+:point_right: The ideas presented in this document can be implemented by scraping together a
 set of processes around a spreadsheet :)
 {{< /hint >}}
 
@@ -31,11 +30,11 @@ tell you are their problems.
 
 {{< columns >}}
 
-**Product Analytics**—how your customers actually use the product.
+:chart_with_upwards_trend: **Product Analytics**—how your customers actually use the product.
 
 <--->
 
-**User Feedback**—what your users tell you are their problems.
+:loudspeaker: **User Feedback**—what your users tell you are their problems.
 
 {{< /columns >}}
 
@@ -45,6 +44,6 @@ product analytics, but not for user feedback. As a result, decisions made by
 conversations, or "gut feelings."
 
 {{< hint info >}}
-Let us know if you have ideas to improve this guide — we are only an email away
+:point_right: Let us know if you have ideas to improve this guide — we are only an email away
 at hello@datadriventeam.org.
 {{< /hint >}}
