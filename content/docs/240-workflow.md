@@ -8,5 +8,5 @@ weight: 240
 Often, design and engineering teams find that referring to customer quotes helps them scope down the implementation and ship the feature faster by solving _real_ customer problems vs. grander, hypothetical ones.
 
 {{< hint info >}}
-Seeing customer problems firsthand builds empathy and helps design and engineering teams ship better solutions.
+:point_right: Seeing customer problems firsthand builds empathy and helps design and engineering teams ship better solutions.
 {{< /hint >}}

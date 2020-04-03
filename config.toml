@@ -3,7 +3,10 @@ languageCode = "en-us"
 title = "Data-Driven Approach to User Feedback"
 theme = "book"
 enableGitInfo = true
+enableEmoji = true
 [params]
-  BookRepo = 'https://github.com/heraldapp/datadriventeam.org'
+  BookMenuBundle = '/menu'
+  BookRepo = "https://github.com/heraldapp/datadriventeam.org"
+  BookEditPath = "edit/master/content"
 [permalinks]
   docs = "/d/:title/"

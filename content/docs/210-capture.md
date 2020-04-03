@@ -18,7 +18,7 @@ _Daryna Kulya, co-founder at OpenPhone states in [a Userstand interview](https:/
 The insight of each customer conversation can be captured with a fairly simple process. Save (1) a brief, verbatim customer quote from an email, chat, video or phone call, etc. and associate it with (2) the customer, and (3) a tag that describes the root of the customer conversation.
 
 {{< hint info >}}
-Note that you may extract multiple quotes from a longer customer conversation and associate them with multiple tags.
+:point_right: Note that you may extract multiple quotes from a longer customer conversation and associate them with multiple tags.
 {{< /hint >}}
 
 This approach is beneficial for a few reasons:
@@ -29,5 +29,5 @@ This approach is beneficial for a few reasons:
 - Keeping the feedback associated with a customer has many benefits: it allows you to reach out to the customer should more details be needed, it allows you to inform them individually when you ship an enhancement, it allows you to analyze what problems impact what types of customers. We elaborate on these points in the rest of the document.
 
 {{< hint info >}}
-The key to being data-driven is to meticulously capture these customer insights. Your team is already doing ~98% of the effort speaking with customers, adding the simple step of tagging insights, and getting them in one place will help your team be data-driven.
+:point_right: The key to being data-driven is to meticulously capture these customer insights. Your team is already doing ~98% of the effort speaking with customers, adding the simple step of tagging insights, and getting them in one place will help your team be data-driven.
 {{< /hint >}}
