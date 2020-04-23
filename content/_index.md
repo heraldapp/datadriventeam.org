@@ -51,7 +51,7 @@ However, as mentioned earlier, because user feedback is subjective, biases can e
 
 - Every product team has a vision of what problem they are solving and how they are going to go about it. If forced to ask, most team can come up with a long roadmap. Without taking a data-driven approach, teams may become susceptible to gut feelings and/or selectively listening to customers whose feedback align with that vision.
 
-It is important to stamp about the aforementioned biases, otherwise, the merits of talking to customers can easily washed away, and may even lead your team down the wrong path. In this guide, based on our learnings from customer-oriented companies like Brex, Notion, Gem, and Tandem, we provide a solution that allows your team to take a data-driven approach to user feedback.
+It is important to stamp about the aforementioned biases, otherwise, the merits of talking to customers can easily be washed away, and may even lead your team down the wrong path. In this guide, we propose an end-to-end solution that allows your team to take a data-driven approach to user feedback based on our learnings from customer-oriented companies like Brex, Notion, Gem, and Tandem.
 
 {{< hint info >}}
 :point_right: Let us know if you have ideas to improve this guide — we are only an email away
