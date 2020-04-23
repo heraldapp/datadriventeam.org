@@ -10,15 +10,12 @@ weight: 100
 
 ## Preface
 
-Neel and I spoke with 50+ companies to figure out how they "make something
-people want." This document summarizes our learnings from processes run at
-customer-oriented companies like Brex, Notion, Gem, Tandem, and more. We are
-chronicling the best of these conversations in our blog: [Userstand— how
-innovative companies understand their
-users](https://www.heraldhq.com/userstand/).
+Over the past few months, Neel and I have spoken with 50+ companies to figure out how they "make something people want." This guide summarizes our learnings from **processes run at customer-oriented companies like Brex, Notion, Gem, Tandem, and more**.
+
+On a related note, we are also chronicling the best of these conversations in our blog: [Userstand— how innovative companies understand their users](https://www.heraldhq.com/userstand/).
 
 {{< hint info >}}
-:point_right: The ideas presented in this document can be implemented by scraping together a
+:point_right: The ideas presented in this guide can be implemented by scraping together a
 set of processes around a spreadsheet :)
 {{< /hint >}}
 
@@ -38,9 +35,9 @@ tell you are their problems.
 
 {{< /columns >}}
 
-The key difference between the two is that product analytics is objective where as user feedback is subjective. There are also a multitude of tools that help answer questions about product usage. Ultimately, answering questions by looking at product analytics is a backbone of a data-driven team. However, while product analytics can answer a lot of what users do and don't do, they can't answer the why or why nots behind them. This can only be answered by asking the user - via user feedback.
+The key difference between the two is that **product analytics is objective** where as **user feedback is subjective**. Ultimately, answering questions quantitatively by looking at product analytics is a backbone of a data-driven team. However, while product analytics can answer a lot of what **users do** and **don't do**, they can't answer the **why** or **why nots** behind those user actions. The best way to understand the motivations behind those actions is by asking the user -- by encouraging and nurturing user feedback. As we observed at many of these customer-oriented companies, when user feedback is an integral part of their engineering processes, it becomes the flywheel that empowers your team to pinpoint and solve the most important customer painpoints.
 
-With that said, as user feedback is subjective, it is very easy to introduce bias even if you're talking to lots of customers. Here are how some of the biases that come into play:
+However, as mentioned earlier, because user feedback is subjective, biases can easily bleed in and disrupt good intentions even if you're talking to lots of customers regularly. Here are how some of the biases that come into play:
 
 ### Loudest voice
 
@@ -54,7 +51,7 @@ With that said, as user feedback is subjective, it is very easy to introduce bia
 
 - Every product team has a vision of what problem they are solving and how they are going to go about it. If forced to ask, most team can come up with a long roadmap. Without taking a data-driven approach, teams may become susceptible to gut feelings and/or selectively listening to customers whose feedback align with that vision.
 
-In this guide, we provide a solution to overcome these biases by taking a data-driven approach to user feedback.
+It is important to stamp about the aforementioned biases, otherwise, the merits of talking to customers can easily washed away, and may even lead your team down the wrong path. In this guide, based on our learnings from customer-oriented companies like Brex, Notion, Gem, and Tandem, we provide a solution that allows your team to take a data-driven approach to user feedback.
 
 {{< hint info >}}
 :point_right: Let us know if you have ideas to improve this guide — we are only an email away
