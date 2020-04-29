@@ -5,7 +5,7 @@ weight: 210
 
 # Capture Feedback Diligently
 
-Capturing structured customer feedback is a marathon, not a race. If feedback is truly fueling a startup's product development process, there should be an overwhelming about of input coming in from users every day. This is understandably daunting. But turning that feedback into actionable insights requires diligence. Every conversation, every message, every text should be fed into a repository of data about what customers are asking about. **That's why Notion has over 200,000 tagged interactions with their customers.**
+Capturing structured customer feedback is a marathon, not a race. If feedback is truly fueling a startup's product development process, there should be an overwhelming about of feedback coming in from users every day. This is understandably daunting. But turning that feedback into actionable insights requires diligence. Every conversation, every message, and every text should be fed into a repository. **That's why Notion has over 200,000 tagged interactions with their customers.**
 
 > Feedback is the only way to objectively prioritize. We know what we need to build for the next 5 years, but sequencing can only happen by understanding feedback. <br />
 >
