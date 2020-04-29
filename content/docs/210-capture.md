@@ -13,9 +13,9 @@ Capturing structured customer feedback is a marathon, not a race. If feedback is
 
 ## Every Conversation Has an Insight
 
-Your customer-facing teammates meticulously work to delight customers by answering questions over email and chat. They take copious notes during user interviews. However, unless special effort is taken, it is hard to build long-term learnings after even years of these efforts. First, the team must recognize and agree that every conversation has an insight. Whether it's a new bug, a point of confusion for the user, or maybe a little more clarity on the segment of users that might benefit most from your product. The
+Your customer-facing teammates meticulously work to delight customers by answering questions over email and chat. They take copious notes during user interviews. However, unless special effort is taken, it is hard to build long-term learnings after even years of these efforts.
 
-Every founder will agree that capturing customer insights is important. It follows then that the insight embedded in each of these conversations should be tracked somewhere.
+First, the team must recognize and agree that every conversation has an insight. It follows then that the insight embedded in each of these conversations should be tracked somewhere.
 
 > It's very important for us to get insights to the team. We think
 > about it a lot. We use Notion for our internal knowledge base and have extended it to include a board for customer insights. There, we have a ranked list of features that people want, and for each feature, we have a list of all the people that have wanted it in the past year. It's nice for us to know the number, to have a sense for how popular a request is. This is key. For now, we just want to know how many people want something and who they are.
@@ -27,8 +27,8 @@ Every founder will agree that capturing customer insights is important. It follo
 It's fairly easy. Just save the following information about every quote:
 
 1. A brief, verbatim customer quote from an email, chat, video or phone call, etc.
-2. The customer providin the feedback.
-3. A tag that describes the root of the customer feedback.
+2. The customer providing the feedback.
+3. A sentence ("tag") that describes the root of the customer feedback.
 
 {{< hint info >}}
 :point_right: Sometimes, one conversation more than one insight. In this case, just extract multiple quotes from the full customer conversation and associate them with one tag each.

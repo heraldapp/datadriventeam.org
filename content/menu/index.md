@@ -8,4 +8,5 @@ headless: true
   - [:clap: Share]({{< relref "/docs/220-share.md" >}})
   - [:mute: Prioritize]({{< relref "/docs/230-prioritize.md" >}})
   - [:clap: Engage]({{< relref "/docs/240-engage.md" >}})
+- [:wrench: **Implementations**]({{< relref "/docs/300-implementations.md" >}})
 - [:raising_hand: **How We Can Help**]({{< relref "/docs/999-help.md" >}})

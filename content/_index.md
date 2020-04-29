@@ -20,8 +20,8 @@ While each of the Userstand conversation focuses on a single company, this guide
 
 {{< hint info >}}
 
-:point_right: The ideas presented in this guide can be implemented by scraping together a
-set of processes around a spreadsheet :)
+:point_right: The ideas presented in this guide can be implemented by scraping together a set of processes around a spreadsheet. In fact, we provide an Airtable template to do so later in this guide :)
+
 {{< /hint >}}
 
 ## Problem
@@ -46,15 +46,16 @@ However, as mentioned earlier, because user feedback is subjective, biases can e
 
 ### Loudest voice
 
-Only the team members who talk directly to customers have a chance to shape what feedback is presented and reviewed. Often, these team members can inject their own bias. Sales teams will naturally bias towards opportunities to close new deals. Product managers tend to bias towards problems that align with a product vision.
+Only the team members who talk directly to customers have a chance to shape what feedback is presented and reviewed. Often, these team members can inject their own bias. Sales teams will naturally bias towards opportunities to close new deals. Product managers tend to bias towards problems that align with a product vision. Customer support tend to bias
+towards issues within the existing product.
 
 ### Recent remarks
 
-When there is no systematic way of recording and analyzing user feedback, teams will get biased by recent remarks. If one gets the same feedback from multiple users in the same week, it may naturally heighten the priority/urgency of the ask. But it might dwarf in comparison to other requests that have consistently been made over a larger time period. Without a data-driven approach, customer-facing teams are naturally susceptible to this bias.
+When there is no systematic way of recording and analyzing user feedback, teams will often get biased by recent remarks. If one gets the same feedback from multiple users in the same week, it may naturally heighten the priority/urgency of the ask. But it might dwarf in comparison to other requests that have consistently been made over a larger time period. Without a data-driven approach, customer-facing teams are naturally susceptible to this bias.
 
 ### Gut feelings
 
-Every product team has a vision for the problem they are solving and how they are going to go about it. If asked, most teams can come up with a long roadmap. Without taking a data-driven approach, teams may become susceptible to gut feelings and/or selectively listening to customers whose feedback aligns with that vision.
+Every product team has a vision for the problem they are solving and how they are going to go about it. If asked, most teams can come up with a roadmap that maps to their current vision. Without taking a data-driven approach, teams may become susceptible to amplifying feedback only from customers whose feedback aligns with that vision.
 
 ## Data-driven approach
 
