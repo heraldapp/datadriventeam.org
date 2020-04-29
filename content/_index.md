@@ -20,7 +20,7 @@ While each of the Userstand conversation focuses on a single company, this guide
 
 {{< hint info >}}
 
-:point_right: The ideas presented in this guide can be implemented by scraping together a set of processes around a spreadsheet. In fact, we provide an Airtable template to do so later in this guide :)
+:point_right: The ideas presented in this guide can be implemented by scraping together a set of processes around a spreadsheet. In fact, [we provide an Airtable template]({{< relref "/docs/300-implementations.md" >}}) to do so later in this guide :)
 
 {{< /hint >}}
 
