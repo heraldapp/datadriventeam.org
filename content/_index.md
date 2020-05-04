@@ -4,7 +4,7 @@ weight: 100
 ---
 
 {{< hint danger >}}
-:warning: As of April 2020, this guide is **still in "pre-release" state but is being actively worked on**. Let us know if you have ideas to improve this guide — we are only an email away at hello@datadriventeam.org.
+:warning: As of early May 2020, this guide is **still in "pre-release" state but is being actively worked on**. Let us know if you have ideas to improve this guide — we are only an email away at hello@datadriventeam.org.
 {{< /hint >}}
 
 # Introduction
@@ -16,7 +16,7 @@ weight: 100
 
 Over the past few months, Nilkanth (Neel) and I have spoken with 50+ companies to understand how they "make something people want." We are chronicling many of these conversations in our blog: [Userstand](https://www.heraldhq.com/userstand/).
 
-While each of the Userstand conversation focuses on a single company, this guide summarizes the collective best practices of **data-driven processes run at customer-obsessed startups like Brex, Notion, Tandem, and more**.
+While each of the Userstand conversation focuses on a single company, this guide summarizes the collective best practices of **data-driven processes at customer-obsessed startups like Brex, Notion, Tandem, and more**.
 
 {{< hint info >}}
 
