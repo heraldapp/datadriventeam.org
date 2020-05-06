@@ -1,0 +1,60 @@
+{
+  "name": "herald-fe-marketing",
+  "private": true,
+  "description": "The external website for Herald.",
+  "version": "0.1.0",
+  "dependencies": {
+    "@loadable/component": "^5.10.1",
+    "cogo-toast": "^4.2.3",
+    "gatsby-transformer-yaml": "^2.4.1",
+    "react-dom": "^16.13.1",
+    "react-helmet-async": "^1.0.6",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "^0.0.35",
+    "@types/node": "^12.0.3",
+    "@types/react-helmet": "^5.0.8",
+    "@types/react-lottie": "^1.2.3",
+    "@types/styled-components": "^5.1.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.21.13",
+    "gatsby-image": "^2.1.1",
+    "gatsby-plugin-manifest": "^2.2.33",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
+    "gatsby-plugin-react-helmet-async": "^1.0.14",
+    "gatsby-plugin-remote-images": "^1.0.3",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.6.1",
+    "gatsby-plugin-styled-components": "^3.1.14",
+    "gatsby-plugin-tslint": "^0.0.2",
+    "gatsby-plugin-typescript": "^2.0.15",
+    "gatsby-plugin-webpack-size": "^1.0.0",
+    "gatsby-remark-autolink-headers": "^2.0.16",
+    "gatsby-remark-copy-linked-files": "^2.0.13",
+    "gatsby-remark-images": "^3.0.14",
+    "gatsby-remark-smartypants": "^2.0.9",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-transformer-remark": "^2.3.12",
+    "gatsby-transformer-sharp": "^2.1.19",
+    "marked": "^0.8.0",
+    "null-loader": "^2.0.0",
+    "prettier": "^2.0.4",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.5.1"
+  },
+  "keywords": [
+    "herald"
+  ],
+  "scripts": {
+    "build-shared": "cd ../shared && yarn build",
+    "build": "yarn build-shared && gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  }
+}

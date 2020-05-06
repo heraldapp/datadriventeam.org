@@ -1,2 +1,4 @@
-public/
-resources/_gen/
+.cache
+.env
+public
+node_modules
