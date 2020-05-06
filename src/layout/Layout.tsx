@@ -4,12 +4,17 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Icon from '~/images/favicon.png';
+import Promo from '~/images/og-promo.png';
 import GlobalStyle from '~/components/GlobalStyle';
 import Nav from '~/components/Nav';
 
 interface IQuery {
   site: {
-    siteMetadata: ISiteMetadata;
+    siteMetadata: {
+      title: string;
+      twitterHandle: string;
+      description: string;
+    };
   };
 }
 
@@ -24,6 +29,7 @@ const query = graphql`
     site {
       siteMetadata {
         title
+        description
         twitterHandle
       }
     }
@@ -56,8 +62,7 @@ const Main = styled.main`
 const Layout: React.FC<IProps> = (props) => {
   const data: IQuery = useStaticQuery(query);
 
-  const { description, isHomepage } = props;
-  const { title: appName, twitterHandle } = data.site.siteMetadata;
+  const { title: appName, twitterHandle, description } = data.site.siteMetadata;
 
   const title = props.image
     ? props.title
@@ -84,23 +89,28 @@ const Layout: React.FC<IProps> = (props) => {
       name: 'twitter:title',
       content: title,
     },
+    {
+      property: `og:image`,
+      content: Promo,
+    },
+    {
+      name: 'twitter:image',
+      content: Promo,
+    },
+    {
+      name: `description`,
+      content: description,
+    },
+    {
+      property: `og:description`,
+      content: description,
+    },
+    {
+      name: `twitter:description`,
+      content: description,
+    },
   ];
-  if (description) {
-    metaValues.push(
-      {
-        name: `description`,
-        content: description,
-      },
-      {
-        property: `og:description`,
-        content: description,
-      },
-      {
-        name: `twitter:description`,
-        content: description,
-      }
-    );
-  }
+
   return (
     <React.Fragment>
       <HelmetProvider>

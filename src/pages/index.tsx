@@ -269,11 +269,7 @@ const logos = ['brex', 'tandem', 'notion', 'openphone', 'sunsama'];
 
 const IndexPage: React.FC = () => {
   return (
-    <Page
-      isHomepage={true}
-      title="How well is your team set up to serve customers?"
-      description="Herald is the best space for teams to collect, analyze, and collaborate on user feedback."
-    >
+    <Page>
       <Styled>
         <div className="header">
           <Container>

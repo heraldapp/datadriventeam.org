@@ -129,6 +129,7 @@ export default styled.div`
   }
   .grid a {
     transition: 250ms all;
+    text-decoration: none;
   }
   .grid a:hover {
     transform: translateY(-10px);

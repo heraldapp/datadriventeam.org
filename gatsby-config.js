@@ -7,7 +7,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Data Driven Team`,
-    twitterHandle: `@HeraldHQ`,
+    description: `This tactical guide presents how customer-obsessed startups quantify user feedback and center their development processes around it.`,
+    twitterHandle: `@AskHerald`,
   },
   plugins: [
     `gatsby-plugin-react-helmet-async`,
