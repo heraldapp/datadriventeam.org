@@ -266,8 +266,8 @@ const Section: React.FC<ISectionProps> = (props) => {
 };
 
 const logos = {
-  brex: 'https://www.brex.com',
   yc: 'https://www.ycombinator.com',
+  brex: 'https://www.brex.com',
   notion: 'https://www.notion.com',
   tandem: 'https://www.tandem.chat',
   openphone: 'https://www.openphone.co',
