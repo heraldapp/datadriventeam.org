@@ -10,15 +10,6 @@ interface ISharingToolsProps {
 }
 
 const Styled = styled.div`
-  position: fixed;
-  right: 32px;
-  bottom: 32px;
-  padding: 16px;
-  text-align: center;
-  background: ${colors.WHITE()};
-  box-shadow: 0 0 30px ${colors.BLACK(0.1)};
-  border-radius: 3px;
-
   .sharing__title {
     color: ${colors.GRAY_3()};
   }

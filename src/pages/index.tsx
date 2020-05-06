@@ -163,6 +163,9 @@ const Styled = styled.div`
     margin-bottom: 24px;
   }
   @media screen and (max-width: 600px) {
+    .header__title {
+      font-size: 40px;
+    }
     .header__inspiration__logos {
       flex-flow: row wrap;
       margin-top: 2rem;

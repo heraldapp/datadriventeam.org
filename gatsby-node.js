@@ -8,8 +8,8 @@ exports.onCreateNode = ({ node, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: `/${node.frontmatter.section}/${
-        node.frontmatter.weight % 100 === 0 ? '' : slug
+      value: `/${node.frontmatter.section}${
+        node.frontmatter.weight % 100 === 0 ? '' : '/' + slug
       }`,
     });
   }
