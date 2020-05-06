@@ -42,7 +42,7 @@ const Styled = styled.div`
     max-width: 50%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: visible;
   }
   .next__direction svg {
     fill: ${colors.PURPLE_LIGHT()};

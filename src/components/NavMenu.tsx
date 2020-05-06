@@ -23,7 +23,6 @@ const query = graphql`
 
 const Styled = styled.div`
   position: fixed;
-  width: 100%;
   margin-top: 24px;
   .nav__menu__section {
     margin-top: 24px;

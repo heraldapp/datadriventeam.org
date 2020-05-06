@@ -11,7 +11,7 @@ module.exports = {
     twitterHandle: `@AskHerald`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Icon from '~/images/favicon.png';
@@ -64,83 +64,65 @@ const Layout: React.FC<IProps> = (props) => {
 
   const { title: appName, twitterHandle, description } = data.site.siteMetadata;
 
-  const title = props.image
-    ? props.title
-    : `${appName}${props.title ? ` | ${props.title}` : ''}`;
+  const title = props.title ? `${appName} | ${props.title}` : appName;
 
   const metaValues = [
     {
-      property: 'og:type',
-      content: 'article',
-    },
-    {
-      name: 'twitter:card',
-      content: 'summary',
-    },
-    {
-      name: 'twitter:creator',
-      content: twitterHandle,
+      property: 'og:site_name',
+      content: appName,
     },
     {
       property: 'og:title',
       content: title,
     },
     {
-      name: 'twitter:title',
-      content: title,
+      name: `description`,
+      property: `og:description`,
+      content: description,
     },
     {
       property: `og:image`,
       content: Promo,
     },
     {
-      name: 'twitter:image',
-      content: Promo,
+      name: 'twitter:card',
+      content: 'summary_large_image',
     },
     {
-      name: `description`,
-      content: description,
+      name: 'twitter:creator',
+      content: twitterHandle,
     },
     {
-      property: `og:description`,
-      content: description,
-    },
-    {
-      name: `twitter:description`,
-      content: description,
+      name: 'twitter:site',
+      content: twitterHandle,
     },
   ];
 
   return (
     <React.Fragment>
-      <HelmetProvider>
-        <Helmet
-          link={[
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '16x16',
-              href: `${Icon}`,
-            },
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '32x32',
-              href: `${Icon}`,
-            },
-            {
-              rel: 'shortcut icon',
-              type: 'image/png',
-              href: `${Icon}`,
-            },
-          ]}
-          title={title}
-          meta={metaValues}
-          bodyAttributes={{
-            class: props.app ? 'app' : '',
-          }}
-        ></Helmet>
-      </HelmetProvider>
+      <Helmet
+        link={[
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: `${Icon}`,
+          },
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: `${Icon}`,
+          },
+          {
+            rel: 'shortcut icon',
+            type: 'image/png',
+            href: `${Icon}`,
+          },
+        ]}
+        title={title}
+        meta={metaValues}
+      />
       <GlobalStyle />
       <Nav />
       <Main>{props.children}</Main>

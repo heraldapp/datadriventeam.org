@@ -59,7 +59,7 @@ const Styled = styled.div`
     align-items: center;
   }
   .header__inspiration__logos__logo {
-    width: 128px;
+    width: 108px;
     height: 36px;
     margin: 12px;
     display: flex;
@@ -70,12 +70,12 @@ const Styled = styled.div`
     height: 28px;
     width: 48px;
   }
-  .header__inspiration__logos__logo--tandem {
-    width: 96px;
-  }
   .header__inspiration__logos__logo--brex {
     height: 24px;
     width: 48px;
+  }
+  .header__inspiration__logos__logo--deel {
+    width: 64px;
   }
   .header__inspiration__logos__logo .gatsby-image-wrapper {
     width: 100%;
@@ -265,7 +265,15 @@ const Section: React.FC<ISectionProps> = (props) => {
   );
 };
 
-const logos = ['brex', 'tandem', 'notion', 'openphone', 'sunsama'];
+const logos = {
+  yc: 'https://www.ycombinator.com',
+  brex: 'https://www.brex.com',
+  notion: 'https://www.notion.com',
+  tandem: 'https://www.tandem.chat',
+  openphone: 'https://www.openphone.co',
+  sunsama: 'https://www.sunsama.com',
+  deel: 'https://www.letsdeel.com',
+};
 
 const IndexPage: React.FC = () => {
   return (
@@ -291,16 +299,18 @@ const IndexPage: React.FC = () => {
                 Featuring Lessons From
               </label>
               <div className="header__inspiration__logos">
-                {logos.map((logo) => (
-                  <div
+                {Object.keys(logos).map((logo) => (
+                  <a
                     key={logo}
+                    href={logos[logo]}
+                    target="_blank"
                     className={`header__inspiration__logos__logo header__inspiration__logos__logo--${logo}`}
                   >
                     <Image
                       src={`logos/${logo}.png`}
                       style={{ objectFit: 'contain' }}
                     />
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
