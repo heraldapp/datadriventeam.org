@@ -49,8 +49,7 @@
     "herald"
   ],
   "scripts": {
-    "build-shared": "cd ../shared && yarn build",
-    "build": "yarn build-shared && gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
