@@ -22,7 +22,7 @@ First, the team must recognize and agree that every conversation has an insight.
 > It's very important for us to get insights to the team. We think
 > about it a lot. We use Notion for our internal knowledge base and have extended it to include a board for customer insights. There, we have a ranked list of features that people want, and for each feature, we have a list of all the people that have wanted it in the past year. It's nice for us to know the number, to have a sense for how popular a request is. This is key. For now, we just want to know how many people want something and who they are.
 >
-> _Daryna Kulya, Co-Founder at OpenPhone, in [a Userstand Interview](https://www.heraldhq.com/userstand/how-openphone-is-dogfooding-itself-to-product-market-fit)_
+> _Daryna Kulya, Co-Founder at [OpenPhone](https://www.openphone.co), in [a Userstand Interview](https://www.heraldhq.com/userstand/how-openphone-is-dogfooding-itself-to-product-market-fit)_
 
 ## How To Capture Those Insights
 
@@ -39,9 +39,9 @@ It's fairly easy. Just save the following information about every quote:
 This approach is beneficial for a few reasons:
 
 - Using a verbatim quote from the customer allows you to use the customer's words as leverage. It is a powerfully ally for convincing teammates and making data-driven decisions. Yes, often, the quote may lack context, and your team may need to follow up with the customer to dig deeper, but if a quote is captured, it is unmistakable that the customer said that once. Avoid paraphrasing the words of the customer if possible, as it opens up concerns about "lost in translation" issues.
-- Limiting customer feedback to a brief, verbatim quote allows others to more quickly [review customer feedback](/d/share-and-review-feedback-regularly/).
+- Limiting customer feedback to a brief, verbatim quote allows others to more quickly [review customer feedback](/process/share-and-review-feedback-regularly/).
 - Keeping the feedback associated with a tag allows your team to easily see how often the same topic has been raised by multiple customers.
-- Keeping the feedback associated with a customer has many benefits: it allows you to reach out to the customer should more details be needed, it allows you to [inform them individually when you ship an enhancement](/d/engage-with-customers-about-their-feedback/), it allows you to [analyze what problems impact what types of customers](/d/prioritize-feedback-based-on-business-goals/).
+- Keeping the feedback associated with a customer has many benefits: it allows you to reach out to the customer should more details be needed, it allows you to [inform them individually when you ship an enhancement](/process/engage-with-customers-about-their-feedback/), it allows you to [analyze what problems impact what types of customers](/process/prioritize-feedback-based-on-business-goals/).
 
 <div class="hint">
 <p>The key to being data-driven is to meticulously capture these insights. Your team is already doing ~98% of the effort speaking with customers, adding the simple step of tagging insights, and getting them in one place will allow your team be data-driven.</p>
