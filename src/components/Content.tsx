@@ -15,7 +15,6 @@ export default styled.div`
     font-family: adobe-caslon-pro, Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     line-height: 2rem;
-    color: ${colors.GRAY_4()};
   }
   h1,
   h2,
@@ -80,8 +79,8 @@ export default styled.div`
     margin-bottom: 16px;
     color: ${colors.PURPLE_DARK()};
   }
-  .hint a,
-  blockquote a {
+  a {
+    color: ${colors.PURPLE_LIGHT()} !important;
     text-decoration: underline;
   }
   blockquote p:first-child {
@@ -188,7 +187,9 @@ export default styled.div`
       line-height: 1.5rem;
     }
     p,
-    li {
+    li,
+    a,
+    button {
       font-size: 1.75rem;
       line-height: 2.5rem;
       margin-bottom: 1rem;

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
@@ -24,6 +24,7 @@ const query = graphql`
 const Styled = styled.div`
   position: fixed;
   width: 100%;
+  margin-top: 24px;
   .nav__menu__section {
     margin-top: 24px;
   }
@@ -56,7 +57,7 @@ const Styled = styled.div`
   }
 `;
 
-const NavMenu: React.FC<INavProps> = (props) => {
+const NavMenu: React.FC = () => {
   const { allMarkdownRemark: data } = useStaticQuery(query);
   return (
     <Styled className="nav__menu">

@@ -29,6 +29,7 @@ const Styled = styled.div`
     box-shadow: 0 0 30px ${colors.BLACK(0.3)};
   }
   .header__title {
+    font-size: 56px;
     margin-top: 24px;
     margin-bottom: 8px;
     color: ${colors.WHITE()};
@@ -40,7 +41,10 @@ const Styled = styled.div`
     max-width: 480px;
     margin: auto;
     margin-bottom: 48px;
-    color: ${colors.GRAY_2()};
+    color: ${colors.GRAY_2(0.8)};
+  }
+  .header__tagline strong {
+    color: ${colors.WHITE()};
   }
   .header__email-input {
     margin-bottom: 64px;
@@ -329,7 +333,7 @@ const IndexPage: React.FC = () => {
             </div>
           </div>
         </Container>
-        <div className="sections">
+        <div className="sections" id="sections">
           <Container>
             <label className="sections__title">Sections</label>
             <div className="sections__grid">

@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby';
 import Page from '~/layout/Layout';
 import Content from '~/components/Content';
 import Menu from '~/components/NavMenu';
+import Next from '~/components/NavNext';
 import EmailInput from '~/components/EmailInput';
 import { NAV_HEIGHT } from '~/components/Nav';
 
@@ -150,6 +151,7 @@ const Styled = styled.div`
 
 interface IQueryData {
   markdownRemark: {
+    fields: { slug: string };
     frontmatter: {
       section: {
         id: string;
@@ -164,6 +166,7 @@ interface IQueryData {
 
 const Interview: React.FC<{ data: IQueryData }> = (props) => {
   const {
+    fields: { slug },
     html,
     frontmatter: { section },
   } = props.data.markdownRemark;
@@ -205,6 +208,9 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
             </div>
             <div className="article__main__content">
               <Content dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="article__main__next">
+                <Next slug={slug} />
+              </div>
             </div>
           </div>
         </div>
@@ -223,6 +229,9 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       frontmatter {
         section {
           id
