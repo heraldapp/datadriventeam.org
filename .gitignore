@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 .cache
 .env
 public
 node_modules
+=======
+public/
+resources/_gen/
+*.bak
+>>>>>>> master
