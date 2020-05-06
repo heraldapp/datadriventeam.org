@@ -64,14 +64,25 @@ const Layout: React.FC<IProps> = (props) => {
 
   const { title: appName, twitterHandle, description } = data.site.siteMetadata;
 
-  const title = props.image
-    ? props.title
-    : `${appName}${props.title ? ` | ${props.title}` : ''}`;
+  const title = props.title ? `${appName} | ${props.title}` : appName;
 
   const metaValues = [
     {
-      property: 'og:type',
-      content: 'article',
+      property: 'og:og:site_name',
+      content: appName,
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      name: `description`,
+      property: `og:description`,
+      content: description,
+    },
+    {
+      property: `og:image`,
+      content: Promo,
     },
     {
       name: 'twitter:card',
@@ -82,32 +93,8 @@ const Layout: React.FC<IProps> = (props) => {
       content: twitterHandle,
     },
     {
-      property: 'og:title',
-      content: title,
-    },
-    {
-      name: 'twitter:title',
-      content: title,
-    },
-    {
-      property: `og:image`,
-      content: Promo,
-    },
-    {
-      name: 'twitter:image',
-      content: Promo,
-    },
-    {
-      name: `description`,
-      content: description,
-    },
-    {
-      property: `og:description`,
-      content: description,
-    },
-    {
-      name: `twitter:description`,
-      content: description,
+      name: 'twitter:site',
+      content: twitterHandle,
     },
   ];
 

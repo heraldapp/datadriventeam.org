@@ -153,6 +153,7 @@ interface IQueryData {
   markdownRemark: {
     fields: { slug: string };
     frontmatter: {
+      title: string;
       section: {
         id: string;
         title: string;
@@ -168,13 +169,13 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
   const {
     fields: { slug },
     html,
-    frontmatter: { section },
+    frontmatter: { section, title },
   } = props.data.markdownRemark;
 
   const Illustration = ILLUSTRATIONS[section.id];
 
   return (
-    <Page>
+    <Page title={title}>
       <Styled className="article">
         <div className="article__email">
           <h5 className="article__email__title">
@@ -233,6 +234,7 @@ export const query = graphql`
         slug
       }
       frontmatter {
+        title
         section {
           id
           title
