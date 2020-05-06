@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Icon from '~/images/favicon.png';
@@ -68,7 +68,7 @@ const Layout: React.FC<IProps> = (props) => {
 
   const metaValues = [
     {
-      property: 'og:og:site_name',
+      property: 'og:site_name',
       content: appName,
     },
     {
@@ -100,34 +100,29 @@ const Layout: React.FC<IProps> = (props) => {
 
   return (
     <React.Fragment>
-      <HelmetProvider>
-        <Helmet
-          link={[
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '16x16',
-              href: `${Icon}`,
-            },
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '32x32',
-              href: `${Icon}`,
-            },
-            {
-              rel: 'shortcut icon',
-              type: 'image/png',
-              href: `${Icon}`,
-            },
-          ]}
-          title={title}
-          meta={metaValues}
-          bodyAttributes={{
-            class: props.app ? 'app' : '',
-          }}
-        ></Helmet>
-      </HelmetProvider>
+      <Helmet
+        link={[
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: `${Icon}`,
+          },
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: `${Icon}`,
+          },
+          {
+            rel: 'shortcut icon',
+            type: 'image/png',
+            href: `${Icon}`,
+          },
+        ]}
+        title={title}
+        meta={metaValues}
+      />
       <GlobalStyle />
       <Nav />
       <Main>{props.children}</Main>
