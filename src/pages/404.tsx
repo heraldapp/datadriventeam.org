@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Layout from "~/layout/Layout";
+import Layout from '~/components/Layout';
 
 const Styled = styled.article`
   position: relative;
@@ -14,7 +14,7 @@ const Styled = styled.article`
   }
 `;
 
-const browser = typeof window !== "undefined" && window;
+const browser = typeof window !== 'undefined' && window;
 
 const NotFoundPage = () => {
   if (!browser) {

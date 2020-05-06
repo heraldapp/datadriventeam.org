@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import { Container } from '~/layout/Layout';
+import { Container } from '~/components/Layout';
 import Image from '~/components/Image';
 import * as colors from '~/lib/colors';
 

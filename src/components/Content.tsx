@@ -16,6 +16,9 @@ export default styled.div`
     font-size: 1.2rem;
     line-height: 2rem;
   }
+  li {
+    color: ${colors.GRAY_4()};
+  }
   h1,
   h2,
   h3,

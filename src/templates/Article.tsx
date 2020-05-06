@@ -2,10 +2,11 @@ import React, { useState, useEffect, useMemo } from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
 
-import Page from '~/layout/Layout';
+import Page from '~/components/Layout';
 import Content from '~/components/Content';
 import Menu from '~/components/NavMenu';
 import Next from '~/components/NavNext';
+import Sharing from '~/components/SharingTools';
 import EmailInput from '~/components/EmailInput';
 import { NAV_HEIGHT } from '~/components/Nav';
 
@@ -95,7 +96,6 @@ const Styled = styled.div`
   }
   .article__email__title {
     color: ${colors.GRAY_3()};
-    text-align: center;
     margin-bottom: 16px;
     line-height: 24px;
   }
@@ -221,6 +221,9 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
             className="article__right__header"
             style={{ backgroundColor: colors[section.color]() }}
           />
+          <div className="article__right__sharing">
+            <Sharing slug={slug} title={title} />
+          </div>
         </div>
       </Styled>
     </Page>

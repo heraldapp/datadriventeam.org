@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import Page, { Container } from '~/layout/Layout';
+import Page, { Container } from '~/components/Layout';
 import EmailInput from '~/components/EmailInput';
 import Image from '~/components/Image';
 import { NAV_HEIGHT } from '~/components/Nav';
