@@ -142,7 +142,7 @@ const Layout: React.FC<IProps> = (props) => {
         ></Helmet>
       </HelmetProvider>
       <GlobalStyle />
-      <Nav isHomepage={isHomepage} />
+      <Nav />
       <Main>{props.children}</Main>
     </React.Fragment>
   );
