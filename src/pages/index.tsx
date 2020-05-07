@@ -67,6 +67,9 @@ const Styled = styled.div`
     height: 24px;
     width: 48px;
   }
+  .header__inspiration__logos__logo--sunsama {
+    width: 90px;
+  }
   .header__inspiration__logos__logo--deel {
     width: 64px;
   }

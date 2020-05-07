@@ -36,6 +36,6 @@ While it is important to log all customer conversations, it is typically not pos
 
 In order to make your feedback actionable, you must have a system in place to filter it according to your priorities. Having a way to combine customer attributes (like: paid user vs. free user, active vs. inactive user, new user vs. veteran user, promoter vs. detractor, etc.) is essential to making this happen. This is how the qualitative data can be turned into quantitative evidence.
 
-> The thing that our whole team is focussing on right now is how do we move people into the "very disappointed" if Sunsama went away category. We poll customers regularly, and we want 40% of respondents to get there. So naturally, we need to prioritize the needs of those that are close, maybe the people that say they would be "somewhat disappointed" if it went away.
+> We poll customers regularly to figure out whether they would be "not disappointed," "somewhat disappointed," or "very disappointed" if Sunsama were to disappear. Our whole team is focused on getting 40% of respondents into the "very disappointed" category. So naturally, we prioritize the needs of those that are close, maybe the people that say they would be “somewhat disappointed” if it went away.
 >
 > _Ashutosh Priyadarshy, Co-Founder and CEO of [Sunsama](https://sunsama.com)_
