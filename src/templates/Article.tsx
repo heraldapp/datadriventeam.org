@@ -8,22 +8,11 @@ import Menu from '~/components/NavMenu';
 import Next from '~/components/NavNext';
 import Sharing from '~/components/SharingTools';
 import EmailInput from '~/components/EmailInput';
+
+import SECTIONS from '~/lib/sections';
 import { NAV_HEIGHT } from '~/components/Nav';
 
 import * as colors from '~/lib/colors';
-
-// illustrations
-import IllustrationCloche from '~/illustrations/Cloche';
-import IllustrationPainting from '~/illustrations/Painting';
-import IllustrationContract from '~/illustrations/Contract';
-import IllustrationFlying from '~/illustrations/Flying';
-
-const ILLUSTRATIONS = {
-  problem: IllustrationFlying,
-  process: IllustrationPainting,
-  implementation: IllustrationContract,
-  help: IllustrationCloche,
-};
 
 const Styled = styled.div`
   min-height: 100vh;
@@ -181,12 +170,7 @@ interface IQueryData {
     fields: { slug: string };
     frontmatter: {
       title: string;
-      section: {
-        id: string;
-        title: string;
-        description: string;
-        color: string;
-      };
+      section: string;
     };
     html: any;
   };
@@ -196,10 +180,10 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
   const {
     fields: { slug },
     html,
-    frontmatter: { section, title },
+    frontmatter: { section: s, title },
   } = props.data.markdownRemark;
 
-  const Illustration = ILLUSTRATIONS[section.id];
+  const section = useMemo(() => SECTIONS[s], [s]);
 
   return (
     <Page title={title}>
@@ -236,7 +220,7 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
                 </p>
               </div>
               <div className="article__main__header__illustration">
-                <Illustration />
+                <section.illustration />
               </div>
             </div>
             <div className="article__main__content">
@@ -267,12 +251,7 @@ export const query = graphql`
       }
       frontmatter {
         title
-        section {
-          id
-          title
-          description
-          color
-        }
+        section
       }
       html
     }

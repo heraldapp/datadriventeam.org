@@ -53,6 +53,7 @@ export default styled.div`
   }
   ul {
     margin-bottom: 1.2rem;
+    padding-inline-start: 10px;
   }
   li {
     list-style-type: disc;

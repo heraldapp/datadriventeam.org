@@ -6,7 +6,6 @@
   "dependencies": {
     "@loadable/component": "^5.10.1",
     "cogo-toast": "^4.2.3",
-    "gatsby-transformer-yaml": "^2.4.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
     "styled-components": "^5.1.0"

@@ -6447,13 +6447,6 @@ gatsby-plugin-remote-images@^1.0.3:
     gatsby-source-filesystem "^2.0.11"
     lodash "^4.17.11"
 
-gatsby-plugin-remove-trailing-slashes@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-2.3.1.tgz#2d358c47338415351ea49f875b0beb50ccdd6cd3"
-  integrity sha512-R0qdnihfbz3Pg+qbdU822mL2Iqe8e0chsSgdCCHm4QNWpKtBETGqbGUYy2ZVPyTOdh7qJ1bDDHxWKEU2mf4kWg==
-  dependencies:
-    "@babel/runtime" "^7.9.6"
-
 gatsby-plugin-root-import@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-root-import/-/gatsby-plugin-root-import-2.0.5.tgz#04e520dc661d67f49aa7950f11b7c780fd2fdbd3"
@@ -6737,16 +6730,6 @@ gatsby-transformer-sharp@^2.1.19:
     probe-image-size "^4.1.1"
     semver "^5.7.1"
     sharp "^0.23.2"
-
-gatsby-transformer-yaml@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.4.1.tgz#30d08368b9be723d0681db08eba6ff3e2feb4772"
-  integrity sha512-wgi1POFasE81MzJ7zhS9g4jsFiQBic2twzqPYpuMH9BF311yx2w4L4PES0Y0SsPy9y+juBKoV+VL9lP8IIKh3w==
-  dependencies:
-    "@babel/runtime" "^7.9.6"
-    js-yaml "^3.13.1"
-    lodash "^4.17.15"
-    unist-util-select "^1.5.0"
 
 gatsby@^2.21.13:
   version "2.21.13"

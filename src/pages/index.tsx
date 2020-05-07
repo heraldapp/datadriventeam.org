@@ -5,19 +5,12 @@ import { Link } from 'gatsby';
 import Page, { Container } from '~/components/Layout';
 import EmailInput from '~/components/EmailInput';
 import Image from '~/components/Image';
+import IllustrationChecklist from '~/illustrations/Checklist';
+import IconArrow from '~/icons/Arrow';
+import SECTIONS from '~/lib/sections';
 import { NAV_HEIGHT } from '~/components/Nav';
 
 import * as colors from '~/lib/colors';
-
-// Illustrations
-import IllustrationChecklist from '~/illustrations/Checklist';
-
-// Icons
-import IconArrow from '~/icons/Arrow';
-import IconMagic from '~/icons/Magic';
-import IconHandHoldingHeart from '~/icons/HandHoldingHeart';
-import IconFire from '~/icons/Fire';
-import IconChartLine from '~/icons/ChartLine';
 
 const Styled = styled.div`
   .header {
@@ -346,34 +339,16 @@ const IndexPage: React.FC = () => {
           <Container>
             <label className="sections__title">Sections</label>
             <div className="sections__grid">
-              <Section
-                title="The Problem"
-                description="Everyone knows user feedback is an essential component to building products customer love. But how do you turn qualitative user feedback into quantifiable and actionable data?"
-                icon={IconFire}
-                slug="problem"
-                color={colors.PURPLE_DARK}
-              />
-              <Section
-                title="The Process"
-                description="How do high-functioning startups deal with this problem? Get insights from our conversations with 50+ founders and leaders at customer-obssessed companies."
-                icon={IconMagic}
-                slug="process"
-                color={colors.ORANGE}
-              />
-              <Section
-                title="Implementation"
-                description="Let's implement these best practices with your team. We provide a step-by-step guide along with an Airtable template to become data driven with your own user feedback."
-                icon={IconChartLine}
-                slug="implementation"
-                color={colors.BLUE_LIGHT}
-              />
-              <Section
-                title="How We Can Help"
-                description="At Herald, we’re building software that helps your team quantify user feedback and bring these best practices to life. It’s the easiest way to stay data driven."
-                icon={IconHandHoldingHeart}
-                slug="help"
-                color={colors.PURPLE_LIGHT}
-              />
+              {Object.keys(SECTIONS).map((s) => (
+                <Section
+                  key={s}
+                  title={SECTIONS[s].title}
+                  description={SECTIONS[s].description}
+                  icon={SECTIONS[s].icon}
+                  slug={s}
+                  color={colors[SECTIONS[s].color]}
+                />
+              ))}
             </div>
           </Container>
         </div>
