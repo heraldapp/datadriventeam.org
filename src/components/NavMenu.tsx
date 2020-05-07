@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
@@ -59,10 +59,13 @@ const Styled = styled.div`
 const NavMenu: React.FC = () => {
   const { allMarkdownRemark: data } = useStaticQuery(query);
 
-  const activeSlug = useMemo(() => {
+  const [activeSlug, setActiveSlug] = useState('');
+
+  useLayoutEffect(() => {
     if (window) {
       const { pathname } = window.location;
-      return pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
+      const s = pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
+      setActiveSlug(s);
     }
   }, []);
 
