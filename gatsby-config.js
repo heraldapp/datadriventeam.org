@@ -37,7 +37,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -73,7 +72,4 @@ module.exports = {
       },
     },
   ],
-  mapping: {
-    'MarkdownRemark.frontmatter.section': `SectionsYaml`,
-  },
 };

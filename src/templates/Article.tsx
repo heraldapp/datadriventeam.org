@@ -2,27 +2,17 @@ import React, { useState, useEffect, useMemo } from 'react';
 import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
 
-import Page from '~/layout/Layout';
+import Page from '~/components/Layout';
 import Content from '~/components/Content';
 import Menu from '~/components/NavMenu';
 import Next from '~/components/NavNext';
+import Sharing from '~/components/SharingTools';
 import EmailInput from '~/components/EmailInput';
+
+import SECTIONS from '~/lib/sections';
 import { NAV_HEIGHT } from '~/components/Nav';
 
 import * as colors from '~/lib/colors';
-
-// illustrations
-import IllustrationCloche from '~/illustrations/Cloche';
-import IllustrationPainting from '~/illustrations/Painting';
-import IllustrationContract from '~/illustrations/Contract';
-import IllustrationFlying from '~/illustrations/Flying';
-
-const ILLUSTRATIONS = {
-  problem: IllustrationFlying,
-  process: IllustrationPainting,
-  implementation: IllustrationContract,
-  help: IllustrationCloche,
-};
 
 const Styled = styled.div`
   min-height: 100vh;
@@ -87,31 +77,57 @@ const Styled = styled.div`
     display: flex;
     flex-flow: column;
   }
-  .article__email {
+  .article__fixed {
     position: fixed;
     bottom: 32px;
     left: 32px;
     width: 400px;
   }
-  .article__email__title {
+  .article__fixed__email__title {
     color: ${colors.GRAY_3()};
-    text-align: center;
     margin-bottom: 16px;
     line-height: 24px;
+  }
+  .article__fixed__sharing {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    padding: 16px;
+    text-align: center;
+    background: ${colors.WHITE()};
+    box-shadow: 0 0 30px ${colors.BLACK(0.1)};
+    border-radius: 3px;
   }
   .article__main__content {
     padding: 48px;
   }
   @media screen and (max-width: 1280px) {
-    .article__email {
+    .article__fixed {
       bottom: 0;
       left: 0;
       width: 100vw;
       padding: 16px;
       background: ${colors.WHITE(0.8)};
       z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .article__email__title {
+    .article__fixed__email {
+      flex: 1 1 auto;
+    }
+    .article__fixed__email .email-input {
+      margin: 0;
+    }
+    .article__fixed__sharing {
+      flex: 0 0 100px;
+      position: initial;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      margin-left: 16px;
+    }
+    .article__fixed__email__title {
       display: none;
     }
   }
@@ -154,12 +170,7 @@ interface IQueryData {
     fields: { slug: string };
     frontmatter: {
       title: string;
-      section: {
-        id: string;
-        title: string;
-        description: string;
-        color: string;
-      };
+      section: string;
     };
     html: any;
   };
@@ -169,21 +180,26 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
   const {
     fields: { slug },
     html,
-    frontmatter: { section, title },
+    frontmatter: { section: s, title },
   } = props.data.markdownRemark;
 
-  const Illustration = ILLUSTRATIONS[section.id];
+  const section = useMemo(() => SECTIONS[s], [s]);
 
   return (
     <Page title={title}>
       <Styled className="article">
-        <div className="article__email">
-          <h5 className="article__email__title">
-            Sign up to get updates
-            <br />
-            to the Data Driven Team guide.
-          </h5>
-          <EmailInput />
+        <div className="article__fixed">
+          <div className="article__fixed__email">
+            <h5 className="article__fixed__email__title">
+              Sign up to get updates
+              <br />
+              to the Data Driven Team guide.
+            </h5>
+            <EmailInput />
+          </div>
+          <div className="article__fixed__sharing">
+            <Sharing slug={slug} title={title} />
+          </div>
         </div>
         <div className="article__left" />
         <div className="article__middle">
@@ -204,7 +220,7 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
                 </p>
               </div>
               <div className="article__main__header__illustration">
-                <Illustration />
+                <section.illustration />
               </div>
             </div>
             <div className="article__main__content">
@@ -235,12 +251,7 @@ export const query = graphql`
       }
       frontmatter {
         title
-        section {
-          id
-          title
-          description
-          color
-        }
+        section
       }
       html
     }

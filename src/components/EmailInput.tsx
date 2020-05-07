@@ -7,6 +7,8 @@ import * as colors from '~/lib/colors';
 import spinner from '~/images/spinner.gif';
 
 const BUTTON_HEIGHT = 36;
+const BUTTON_HEIGHT_SMALL = 28;
+
 const PADDING = 3;
 
 const Styled = styled.div`
@@ -19,6 +21,7 @@ const Styled = styled.div`
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: ${PADDING}px;
   border: 2px solid ${colors.WHITE()};
   transition: 250ms all;
@@ -54,6 +57,7 @@ const Styled = styled.div`
     background: ${colors.PURPLE_LIGHT()};
     color: ${colors.WHITE()};
     position: relative;
+    white-space: nowrap;
   }
   .email-input__button__text {
     transition: 250ms opacity;
@@ -72,6 +76,19 @@ const Styled = styled.div`
   }
   .email-input__button--loading .email-input__button__spinner {
     opacity: 1;
+  }
+  @media screen and (max-width: 600px) {
+    height: calc(${BUTTON_HEIGHT_SMALL}px + ${PADDING * 4}px);
+    .email-input__input {
+      height: ${BUTTON_HEIGHT_SMALL}px;
+      font-size: 12px;
+      padding: 0 6px;
+    }
+    .email-input__button {
+      height: ${BUTTON_HEIGHT_SMALL}px;
+      font-size: 12px;
+      padding: 8px;
+    }
   }
 `;
 
@@ -131,7 +148,7 @@ const EmailInput = () => {
     <Styled className="email-input">
       <input
         className="email-input__input"
-        placeholder="Enter your e-mail address..."
+        placeholder="Your e-mail address..."
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />

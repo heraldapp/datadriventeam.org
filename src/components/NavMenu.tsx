@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
@@ -58,10 +58,25 @@ const Styled = styled.div`
 
 const NavMenu: React.FC = () => {
   const { allMarkdownRemark: data } = useStaticQuery(query);
+
+  const [activeSlug, setActiveSlug] = useState('');
+
+  useLayoutEffect(() => {
+    if (window) {
+      const { pathname } = window.location;
+      const s = pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
+      setActiveSlug(s);
+    }
+  }, []);
+
   return (
     <Styled className="nav__menu">
-      {data.nodes.map((n) => (
-        <Link to={n.fields.slug} activeClassName="active" key={n.id}>
+      {data.nodes.map((n: any) => (
+        <Link
+          to={n.fields.slug}
+          key={n.id}
+          className={n.fields.slug === activeSlug ? 'active' : 'inactive'}
+        >
           {n.frontmatter.weight % 100 === 0 ? (
             <div className="nav__menu__section">
               <label>{n.frontmatter.short}</label>
