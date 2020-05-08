@@ -25,8 +25,8 @@ export default {
     icon: IconMagic,
     illustration: IllustrationPainting,
   },
-  implementation: {
-    title: 'Implementation',
+  tools: {
+    title: 'The Tools',
     description: `Let's implement these best practices with your team. We provide a step-by-step guide along with an Airtable template to become data driven with your own user feedback.`,
     color: 'BLUE_LIGHT',
     icon: IconChartLine,
