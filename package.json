@@ -1,7 +1,7 @@
 {
-  "name": "herald-fe-marketing",
+  "name": "datadriventeam.org",
   "private": true,
-  "description": "The external website for Herald.",
+  "description": "A tactical guide on how customer-obsessed startups quantify user feedback and center their development processes around it.",
   "version": "0.1.0",
   "dependencies": {
     "@loadable/component": "^5.10.1",
@@ -51,8 +51,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "yarn develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   }
 }
