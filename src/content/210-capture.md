@@ -15,7 +15,7 @@ Capturing structured customer feedback is a marathon, not a race. If feedback is
 
 ## How to solicit feedback from customers
 
-It's tough to get customers to open up about the problems their facing. That means your product team needs to in the up front effort to make it as easy as possible for them to voice their opinions whenever (or wherever) they feel the urge.
+It's tough to get customers to open up about the problems they are facing. That means your product team needs to in the up front effort to make it as easy as possible for them to provide feedback.
 
 Here are some channels you can leverage to do this:
 

@@ -26,7 +26,7 @@ In order to track what percentage of problems are being addressed each week, it'
 It's important to note that for every customer problem you solve in a given sprint, you might be uncovering 2-3 more. So in order to compute the percentage of problems computed, divide the total weight of problems solved by the total weight of all problems that were "active" during that time span.
 
 <div class="hint">
-<p>For example, say a team plans in one-week sprints. During their planning meeting, they have qualified problems with a collective weight of 100. Over the course of the sprint, they close qualified problems with a total weight of 30. But they also find new qualified problems with a total weight of 20. This means they addressed 30 / (100 + 20) = 25% of customer problems during the sprint.
+<p>For example, say a team plans in two-week sprints. During their planning meeting, they have qualified problems with a collective weight of 100. Over the course of the sprint, they close qualified problems with a total weight of 30. But they also find new qualified problems with a total weight of 20. This means they addressed 30 / (100 + 20) = 25% of customer problems during the sprint.
 </p>
 </div>
 
@@ -53,4 +53,4 @@ Additionally, seeing customer problems firsthand builds empathy from design and 
 
 It's natural to wonder what exactly is the right benchmark for this metric. There is no one-size-fits-all answer to this question—the nature of your business and feedback volume largely dictates what your goal should be.
 
-As a rule of thumb, we recommend your stay around the 10% range for the percentage of customer problems being solved each week. Obviously, the higher the better, but if you're in this range, don't fret!
+As a rule of thumb, we recommend you try and compare your team's week over week numbers to get a sense of where you are, and continually try to improve them.
