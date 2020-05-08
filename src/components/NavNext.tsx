@@ -36,6 +36,7 @@ const query = graphql`
 const Styled = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 64px;
   .next__direction {
     display: flex;
     align-items: center;
