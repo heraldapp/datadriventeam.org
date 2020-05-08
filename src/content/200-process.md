@@ -34,7 +34,7 @@ Diligently capture all your user feedback. This will pay dividends as you iterat
 
 <a href="/process/qualify-feedback-based-on-business-goals">
 <div>
-<h2>2. Quality</h2>
+<h2>2. Qualify</h2>
 <p>
 "Listen closely to <em>some</em> customers." Pick the user segments that matter most to your business and double down on their problems.
 </p>
