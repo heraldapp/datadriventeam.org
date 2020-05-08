@@ -7,7 +7,7 @@ weight: 230
 
 # Solve qualified problems every week
 
-The goal of implementing a process for user feedback is to be able to quantify how well your team is "listening" to customers and therefore solving their problems. If you're tracking feedback carefully, it's much easier to map your output to customer feedback.
+The goal of customer-driven development is to be able to quantify how well your team is "listening" to customers and therefore solving their problems. If you're tracking feedback carefully, it's much easier to map your output to customer feedback.
 
 Every team has a cadence at which they plan and complete work. For engineering teams, this is often referred to as a sprint, and for the purpose of this guide, we'll be referring to it as a sprint too. Usually, these happen in 1-2 week intervals. In order to understand how well you're listening to customers, we recommend you track **the percent of qualified problems that your team was able to solve in a given planning period**.
 
