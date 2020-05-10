@@ -14,7 +14,7 @@ export const PROCESS_SECTIONS = {
 
 const Styled = styled.div`
   position: relative;
-  width: 380px;
+  width: 500px;
   padding: 20px;
   padding-bottom: 10px;
   margin-top: -110px;
@@ -29,14 +29,14 @@ const Styled = styled.div`
   }
 
   svg {
-    width: 240px;
-    height: 240px;
-    max-width: calc(100% - 80px);
+    width: 340px;
+    height: 340px;
+    max-width: calc(100% - 120px);
   }
 
   .steps {
     position: absolute;
-    left: 250px;
+    left: 340px;
     top: 0;
     width: 120px;
   }
@@ -53,22 +53,22 @@ const Styled = styled.div`
     opacity: 1;
   }
   .step--active {
-    transform: scale(1.1);
+    transform: scale(1.2) translateX(10px);
   }
   .step--Capture {
-    top: 30px;
+    top: 50px;
   }
   .step--Qualify {
-    top: 110px;
+    top: 160px;
   }
   .step--Solve {
-    top: 200px;
+    top: 280px;
   }
   .step--Engage {
-    width: 90px;
+    width: 120px;
     text-align: center;
-    top: 115px;
-    left: 15px;
+    top: 160px;
+    left: 10px;
   }
   .step__title,
   .step__text {
@@ -77,10 +77,11 @@ const Styled = styled.div`
   .step__title__label {
     color: ${colors.ORANGE()};
     font-family: neuzeit-grotesk, sans-serif;
+    font-size: 16px;
   }
   .step__text {
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 20px;
     font-family: neuzeit-grotesk, sans-serif;
   }
   .funnel__piece {
@@ -95,14 +96,40 @@ const Styled = styled.div`
   .funnel__piece--engage {
     opacity: 1;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 520px) {
+    margin-top: -140px;
     .steps {
-      left: calc(100% - 90px);
-      width: 80px;
+      left: calc(100% - 150px);
+      width: 120px;
+      height: 100%;
+    }
+    svg {
+      height: 100%;
+    }
+    .step__title__label {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .step__text {
+      font-size: 11px;
+      line-height: 14px;
+    }
+    .step--Capture {
+      top: 15%;
+    }
+    .step--Qualify {
+      top: 40%;
+    }
+    .step--Solve {
+      top: 70%;
     }
     .step--Engage {
       left: 10px;
       text-align: left;
+      top: 41%;
+    }
+    .step--active {
+      transform: scale(1.2) translateX(8px);
     }
   }
 `;
