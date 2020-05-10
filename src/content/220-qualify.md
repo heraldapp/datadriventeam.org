@@ -5,6 +5,8 @@ short: Qualify
 weight: 220
 ---
 
+<process-funnel-qualify></process-funnel-qualify>
+
 # Qualify feedback based on business goals
 
 Feedback will be abundant, but it's important to recognize that you have limited time and you must prioritize feedback from customers most important to your business goals. This means qualifying the problems you're tracking based on the customers that have surfaced them.

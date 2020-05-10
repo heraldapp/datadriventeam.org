@@ -5,6 +5,8 @@ short: Solve
 weight: 230
 ---
 
+<process-funnel-solve></process-funnel-solve>
+
 # Solve qualified problems every week
 
 The goal of customer-driven development is to be able to quantify how well your team is "listening" to customers and therefore solving their problems. If you're tracking feedback carefully, it's much easier to map your output to customer feedback.

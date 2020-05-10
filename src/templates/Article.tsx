@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import styled from 'styled-components';
-import { graphql, Link } from 'gatsby';
+import rehypeReact from 'rehype-react';
+import { graphql } from 'gatsby';
 
 import Page from '~/components/Layout';
 import Content from '~/components/Content';
@@ -8,6 +9,7 @@ import Menu from '~/components/NavMenu';
 import Next from '~/components/NavNext';
 import Sharing from '~/components/SharingTools';
 import EmailInput from '~/components/EmailInput';
+import ProcessFunnel, { PROCESS_SECTIONS } from '~/components/ProcessFunnel';
 
 import SECTIONS from '~/lib/sections';
 import { NAV_HEIGHT } from '~/components/Nav';
@@ -171,16 +173,30 @@ interface IQueryData {
     frontmatter: {
       title: string;
       section: string;
+      short: string;
     };
     html: any;
+    htmlAst: any;
   };
 }
 
-const Interview: React.FC<{ data: IQueryData }> = (props) => {
+const components: { [key: string]: React.FC } = {
+  'process-funnel': ProcessFunnel,
+};
+Object.keys(PROCESS_SECTIONS).forEach((s) => {
+  components[`process-funnel-${s}`] = () => <ProcessFunnel step={s} />;
+});
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components,
+}).Compiler;
+
+const Article: React.FC<{ data: IQueryData }> = (props) => {
   const {
     fields: { slug },
-    html,
-    frontmatter: { section: s, title },
+    htmlAst,
+    frontmatter: { section: s, title, short },
   } = props.data.markdownRemark;
 
   const section = useMemo(() => SECTIONS[s], [s]);
@@ -224,7 +240,7 @@ const Interview: React.FC<{ data: IQueryData }> = (props) => {
               </div>
             </div>
             <div className="article__main__content">
-              <Content dangerouslySetInnerHTML={{ __html: html }} />
+              <Content>{renderAst(htmlAst)}</Content>
               <div className="article__main__next">
                 <Next slug={slug} />
               </div>
@@ -252,10 +268,11 @@ export const query = graphql`
       frontmatter {
         title
         section
+        short
       }
-      html
+      htmlAst
     }
   }
 `;
 
-export default Interview;
+export default Article;

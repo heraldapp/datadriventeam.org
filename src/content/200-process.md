@@ -60,3 +60,7 @@ Don't treat user feedback as a one-way street. Keep customers engaged in your te
 </a>
 
 </div>
+
+Here is a diagram we'll be using throughout the process section to deptic this four-stage cycle.
+
+<process-funnel></process-funnel>

@@ -5,6 +5,8 @@ short: Capture
 weight: 210
 ---
 
+<process-funnel-capture></process-funnel-capture>
+
 # Capture feedback diligently
 
 Capturing structured customer feedback is a marathon, not a race. If feedback is truly fueling a startup's product development, it should be coming in from users every day. This is understandably daunting. But turning that feedback into actionable insights requires diligence. Every conversation, every message, and every text should be fed into a repository. **That's why Notion has over 200,000 tagged interactions with their customers.**
