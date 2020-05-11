@@ -137,7 +137,6 @@ const EmailInput = () => {
         </span>
       );
     } catch (e) {
-      console.log(e);
       toast.error(e);
     } finally {
       setLoading(false);

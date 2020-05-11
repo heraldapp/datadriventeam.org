@@ -12,7 +12,7 @@ interface INavProps {
   isHomepage?: boolean;
 }
 
-const Styled = styled.article`
+const Styled = styled.header`
   position: fixed;
   z-index: 50;
   height: ${NAV_HEIGHT};
