@@ -71,8 +71,10 @@ const Styled = styled.div`
     left: 10px;
   }
   .step__title,
+  .step__title__label,
   .step__text {
     margin: 0;
+    cursor: pointer;
   }
   .step__title__label {
     color: ${colors.ORANGE()};
