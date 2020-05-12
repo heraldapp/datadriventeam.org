@@ -19,7 +19,9 @@ Talking to users and diligently tracking their feedback also has additional bene
 
 ## The four step process
 
-In order to be data-driven about user feedback, software teams need to adopt a process that encourages and promotes it. In this section, we summarize the key components of a data-driven approach to user feedback, as practiced by some of the world's best software startups like Brex, Notion, Tandem, and more. The four step process is as follows:
+In order to be data-driven about user feedback, software teams need to adopt a process that encourages and promotes it. In this section, we summarize the key components of a data-driven approach to user feedback, as practiced by some of the world's best software startups like Brex, Notion, Tandem, and more. The diagram below describes this four-stage process:
+
+<process-funnel></process-funnel>
 
 <div class="grid grid-2">
 
@@ -60,7 +62,3 @@ Don't treat user feedback as a one-way street. Keep customers engaged in your te
 </a>
 
 </div>
-
-Here is a diagram we'll be using throughout the process section to deptic this four-stage cycle.
-
-<process-funnel></process-funnel>

@@ -17,11 +17,11 @@ Capturing structured customer feedback is a marathon, not a race. If feedback is
 
 ## How to solicit feedback from customers
 
-It's tough to get customers to open up about the problems they are facing. That means your product team needs to in the up front effort to make it as easy as possible for them to provide feedback.
+It's tough to get customers to open up about the problems they are facing. That means your team needs to make it as easy as possible for users to provide feedback.
 
 Here are some channels you can leverage to do this:
 
-- **Periodic surveys**—ask for feedback along key checkpoints on the user journey. For example, when a new user turns into an "activated" customer, try to set up a call or just solicit feedback over email **You can also use these surveys to ask multiple choice questions to segment your users.** This can be helpful later on, when looking to [qualify customer problems](/process/qualify-feedback-based-on-business-goals).
+- **Periodic surveys**—ask for feedback along key checkpoints on the user journey. For example, when a new user turns into an "activated" customer, try to set up a call or just solicit feedback over email. **You can also use these surveys to ask multiple choice questions to segment your users.** This can be helpful later on, when looking to [qualify customer problems](/process/qualify-feedback-based-on-business-goals).
 - **In-app feedback**—provide an omnipresent widget in your UI for getting a customer's gut reactions when they are frustrated or elated. Make the feedback form simple ("Is everything OK? Which of these emotions are you feeling today?")
 - **New feature feedback**—whenever your team ships a new feature, accentuate it in your UI and ideally provide a one click way for customers to provide their initial thoughts on it. Does it help them? Is it an eye sore?
 - **Always-on chat**—many companies choose to have an always available chat widget in their app. This is another great way for customers to provide feedback, it's a widely recognized pattern. But it also comes with the expectation of a near immediate response, so beware.
@@ -47,7 +47,7 @@ It's fairly easy. Just save the following information about every quote:
 3. A sentence ("tag") that describes the root of the customer feedback.
 
 <div class="hint">
-<p>Sometimes, one conversation more than one insight. In this case, just extract multiple quotes from the full customer conversation and associate them with one tag each.</p>
+<p>Sometimes, one conversation has more than one insight. In this case, just extract multiple quotes from the full customer conversation and associate them with one tag each.</p>
 </div>
 
 This approach is beneficial for a few reasons:
@@ -66,9 +66,9 @@ This approach is beneficial for a few reasons:
 To be able to take a data-driven approach to analyzing customer feedback, it is important that every single customer conversation is tagged. When you selectively tag conversations, any decisions made on the basis of those tags will be susceptible to bias.
 
 <div class="hint">
-<p>Again, it's OK to start slow here. Start with tagging a few conversations a week and scale up as the data-driven approach proves it's value to your team.</p>
+<p>Again, it's OK to start slow here. Start with tagging a few conversations a week and scale up as the data-driven approach proves its value to your team.</p>
 </div>
 
-> If you have a lot of feedback, it's hard to parse all of that. As we grow and more users come in, it's impossible for all of it to come into mind quickly. We needed a system boils down every conversation to the core piece of feedback with the user.
+> If you have a lot of feedback, it's hard to parse all of that. As we grow and more users come in, it's impossible for all of it to come into mind quickly. We needed a system that boils down every conversation to the core piece of feedback with the user.
 >
 > _Rajiv Ayyangar, Co-Founder and CEO of [Tandem](https://tandem.chat)_

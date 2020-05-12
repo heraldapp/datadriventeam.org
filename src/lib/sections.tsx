@@ -34,7 +34,7 @@ export default {
   },
   help: {
     title: `How We Can Help`,
-    description: `At Herald, we’re building software that helps your team quantify user feedback and bring these best practices to life. It’s the easiest way to stay data driven.`,
+    description: `At Herald, we’re building software that helps your team quantify user feedback and bring these best practices to life. Put data-driven decision making in your DNA.`,
     color: 'PURPLE_LIGHT',
     icon: IconHandHoldingHeart,
     illustration: IllustrationCloche,
