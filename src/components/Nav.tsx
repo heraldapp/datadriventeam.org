@@ -80,13 +80,16 @@ const Styled = styled.header`
 `;
 
 const Nav: React.FC<INavProps> = (props) => {
+  const { onClickOverflow } = props;
   return (
     <Styled className="nav">
       <Container className="nav__container">
         <div className="nav__left">
-          <div className="nav__left__overflow" onClick={props.onClickOverflow}>
-            <Bars />
-          </div>
+          {onClickOverflow && (
+            <div className="nav__left__overflow" onClick={onClickOverflow}>
+              <Bars />
+            </div>
+          )}
           <a
             href="https://www.heraldhq.com"
             target="_blank"
