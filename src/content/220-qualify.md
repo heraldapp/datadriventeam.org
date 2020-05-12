@@ -26,7 +26,7 @@ You know your business and your goals better than anyone, and you must decide wh
 - Churned customers
 - Customers that churn immediately after onboarding.
 
-Once you and your team are aligned on what customer segments matter msot, the next step is to prioritize feedback from those customers.
+Once you and your team are aligned on what customer segments matter most, the next step is to prioritize feedback from those customers.
 
 > We try to make all our customers happy; however, from a business perspective, we do prioritize the needs of our larger accounts and anything that improves the odds of closing new leads.
 >
