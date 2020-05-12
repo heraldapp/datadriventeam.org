@@ -54,7 +54,7 @@ Optimize your planning to solve problems that will satisfy the highest number of
 <div>
 <h2>4. Engage</h2>
 <p>
-Don't treat user feedback as a one-way street. Keep customers engaged in your team's progress< as you solve one of their problems.
+Don't treat user feedback as a one-way street. Keep customers engaged in your team's progress as you solve one of their problems.
 </p>
 </div>
 </a>
