@@ -45,7 +45,7 @@ If the majority of respondents say it did indeed improve the problem, it's reaso
 
 Solving customer problems is a collaborative effort. Design and engineering teams find that referring to customer quotes helps them scope down the implementation and ship the feature faster by solving _real_ customer problems vs. grander, hypothetical ones. Understanding the right trade-offs to make is impossible without understanding the insights coming from customers.
 
-Additionally, seeing customer problems firsthand builds empathy from design and engineering teams. There is nothing more painful than seeing someone struggle to use the software you designed or built. Ultimately, this Will result in teams shipping better solutions.
+Additionally, seeing customer problems firsthand builds empathy from design and engineering teams. There is nothing more painful than seeing someone struggle to use the software you designed or built. Ultimately, this will result in teams shipping better solutions.
 
 > Our engineering team does most of the inbound support. As such, our customers always get quick and technically complete answers. It also allows the engineers to "feel the pain" of our customers. The amount of customer love that we can generate by going the extra mile is the kind of stuff that they tell their friends when they're starting their podcasts.
 >
