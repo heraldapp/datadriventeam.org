@@ -44,7 +44,7 @@ In order to make your feedback actionable, you must have a system in place to fi
 
 ## Share and review qualified problems regularly
 
-One of biggest problems teams face when it comes to using customer feedback effectively comes from the natural information asymmetry that results when only a handful of individuals talk to customers. Those teammates have a treasure trove of data about what customers want and it must be shared widely. Leaving it in a silo results means your most valuable customer insights are not always shared for the benefit of other teams, including engineering and design—the ones tasked with building solutions to customer problems.
+One of biggest problems teams face when it comes to using customer feedback effectively comes from the natural information asymmetry that results when only a handful of individuals talk to customers. Those teammates have a treasure trove of data about what customers want and it must be shared widely. Leaving it in a silo means your most valuable customer insights are not always shared with other teams, including engineering and design—the ones tasked with building solutions to customer problems.
 
 > We try to let everyone build context around where the opportunities are in the product, what's some of the most important feedback, etc. We share high signal summaries of customer feedback to an internal mailing list that everyone on the company is a member of. The higher signal stuff comes from sales conversations when we lose deals, when we churn, or proactive conversations with customers who might be interested in new product areas (that we plan on building).
 >

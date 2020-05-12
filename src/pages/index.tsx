@@ -328,9 +328,9 @@ const IndexPage: React.FC = () => {
               <p className="problem__description__description text-no-margin">
                 However, it’s hard to quantify user feedback, and easy to let
                 biases creep in how a team shares and interprets user feedback.
-                That’s why every team needs a process for how they collect,
-                organize, and share it.{' '}
-                <Link to="/problem">Read on to learn how</Link>.
+                That’s why every team needs a repeatable process for how they
+                collect, organize, and share it.{' '}
+                <Link to="/problem">Learn how</Link>.
               </p>
             </div>
             <div className="problem__illustration">
