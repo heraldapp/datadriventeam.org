@@ -4,12 +4,14 @@ import { Link } from 'gatsby';
 
 import { Container } from '~/components/Layout';
 import Image from '~/components/Image';
+import Bars from '~/icons/Bars';
 import * as colors from '~/lib/colors';
 
 export const NAV_HEIGHT = '60px';
 
 interface INavProps {
   isHomepage?: boolean;
+  onClickOverflow?: () => void;
 }
 
 const Styled = styled.header`
@@ -19,17 +21,32 @@ const Styled = styled.header`
   width: 100vw;
   top: 0;
   background: ${colors.BLUE_DARK(0.9)};
-
+  .nav__left {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+  .nav__left__overflow {
+    display: none;
+    flex: 0 0 10px;
+    margin-right: 12px;
+  }
+  .nav__left__herald {
+    width: 90px;
+  }
+  .nav__left__overflow svg {
+    fill: ${colors.WHITE()};
+  }
   .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .nav__herald {
+  .nav__left {
     width: 120px;
     height: calc(100% - 32px);
   }
-  .nav__herald .gatsby-image-wrapper {
+  .nav__left .gatsby-image-wrapper {
     width: 100%;
     height: 100%;
   }
@@ -53,7 +70,10 @@ const Styled = styled.header`
     color: ${colors.WHITE()};
   }
   @media screen and (max-width: 600px) {
-    .nav__herald {
+    .nav__left__overflow {
+      display: initial;
+    }
+    .nav__left__herald {
       width: 80px;
     }
   }
@@ -63,8 +83,15 @@ const Nav: React.FC<INavProps> = (props) => {
   return (
     <Styled className="nav">
       <Container className="nav__container">
-        <div className="nav__herald">
-          <a href="https://www.heraldhq.com" target="_blank">
+        <div className="nav__left">
+          <div className="nav__left__overflow" onClick={props.onClickOverflow}>
+            <Bars />
+          </div>
+          <a
+            href="https://www.heraldhq.com"
+            target="_blank"
+            className="nav__left__herald"
+          >
             <Image
               src="logos/herald.png"
               style={{ objectFit: 'contain', objectPosition: 'left' }}

@@ -22,6 +22,7 @@ interface IProps {
   title?: string;
   description?: string;
   isHomepage?: boolean;
+  onClickOverflow?: () => void;
 }
 
 const query = graphql`
@@ -124,7 +125,7 @@ const Layout: React.FC<IProps> = (props) => {
         meta={metaValues}
       />
       <GlobalStyle />
-      <Nav />
+      <Nav onClickOverflow={props.onClickOverflow} />
       <Main>{props.children}</Main>
     </React.Fragment>
   );
