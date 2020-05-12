@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import styled from 'styled-components';
 import rehypeReact from 'rehype-react';
 import { graphql } from 'gatsby';
@@ -79,6 +79,10 @@ const Styled = styled.div`
     display: flex;
     flex-flow: column;
   }
+  .article__nav__container {
+    position: fixed;
+    margin-top: 24px;
+  }
   .article__fixed {
     position: fixed;
     bottom: 32px;
@@ -144,7 +148,19 @@ const Styled = styled.div`
     }
     .article__nav {
       display: none;
+    }
+    .article__nav--open {
+      display: initial;
       padding: 24px;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: ${colors.WHITE()};
+      z-index: 101;
+    }
+    .article__nav__container {
+      margin: 0;
+      width: calc(100% - 48px);
     }
     .article__main__header {
       padding-left: 24px;
@@ -196,13 +212,14 @@ const Article: React.FC<{ data: IQueryData }> = (props) => {
   const {
     fields: { slug },
     htmlAst,
-    frontmatter: { section: s, title, short },
+    frontmatter: { section: s, title },
   } = props.data.markdownRemark;
 
   const section = useMemo(() => SECTIONS[s], [s]);
+  const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <Page title={title}>
+    <Page title={title} onClickOverflow={() => setNavOpen(true)}>
       <Styled className="article">
         <div className="article__fixed">
           <div className="article__fixed__email">
@@ -219,8 +236,14 @@ const Article: React.FC<{ data: IQueryData }> = (props) => {
         </div>
         <div className="article__left" />
         <div className="article__middle">
-          <div className="article__nav">
-            <Menu />
+          <div
+            className={`article__nav article__nav--${
+              navOpen ? 'open' : 'closed'
+            }`}
+          >
+            <div className="article__nav__container">
+              <Menu onClickClose={() => setNavOpen(false)} />
+            </div>
           </div>
           <div className="article__main">
             <div
