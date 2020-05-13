@@ -42,6 +42,12 @@ const Styled = styled.div`
   .header__email-input {
     margin-bottom: 64px;
   }
+  .header__email-input__description {
+    font-size: 14px;
+    color: ${colors.WHITE(0.7)};
+    margin: 0;
+    margin-top: 10px;
+  }
   .header__inspiration__title {
     color: ${colors.WHITE()};
   }
@@ -292,6 +298,9 @@ const IndexPage: React.FC = () => {
             </div>
             <div className="header__email-input">
               <EmailInput />
+              <p className="header__email-input__description">
+                Get updated when we post new interviews, stories, and tips.
+              </p>
             </div>
             <div className="header__inspiration">
               <label className="header__inspiration__title">
