@@ -224,9 +224,9 @@ const Article: React.FC<{ data: IQueryData }> = (props) => {
         <div className="article__fixed">
           <div className="article__fixed__email">
             <h5 className="article__fixed__email__title">
-              Sign up to get updates
+              Get updated when we post
               <br />
-              to the Data Driven Team guide.
+              new interviews, stories, and tips.
             </h5>
             <EmailInput />
           </div>
