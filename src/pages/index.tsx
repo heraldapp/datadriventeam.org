@@ -31,13 +31,13 @@ const Styled = styled.div`
     font-size: 18px;
     line-height: 26px;
     width: 100%;
-    max-width: 480px;
+    max-width: 400px;
     margin: auto;
     margin-bottom: 48px;
-    color: ${colors.GRAY_2(0.8)};
-  }
-  .header__tagline strong {
     color: ${colors.WHITE()};
+  }
+  .header__tagline__start {
+    display: none;
   }
   .header__email-input {
     margin-bottom: 64px;
@@ -47,6 +47,10 @@ const Styled = styled.div`
     color: ${colors.WHITE(0.7)};
     margin: 0;
     margin-top: 10px;
+    white-space: nowrap;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .header__inspiration__title {
     color: ${colors.WHITE()};
@@ -165,8 +169,20 @@ const Styled = styled.div`
     margin-bottom: 24px;
   }
   @media screen and (max-width: 600px) {
+    .header {
+      padding-top: ${NAV_HEIGHT};
+    }
     .header__title {
       font-size: 40px;
+    }
+    .header__tagline {
+      font-size: 16px;
+    }
+    .header__tagline__start {
+      display: initial;
+    }
+    .header__email-input {
+      margin-bottom: 32px;
     }
     .header__inspiration__logos {
       flex-flow: row wrap;
@@ -177,6 +193,14 @@ const Styled = styled.div`
       margin-top: -96px;
       margin-bottom: 64px;
       flex-flow: column;
+    }
+    .problem__description__title {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .problem__description__description {
+      font-size: 14px;
+      line-height: 18px;
     }
     .problem__illustration {
       margin-left: 0;
@@ -288,13 +312,8 @@ const IndexPage: React.FC = () => {
           <Container>
             <h1 className="header__title">Data Driven Team</h1>
             <div className="header__tagline">
-              <strong>
-                Data driven startups measure how well they listen to customers.
-                Does yours?
-              </strong>{' '}
-              This tactical guide presents how customer-obsessed startups
-              quantify user feedback and center their development processes
-              around it.
+              A tactical guide to how customer-obsessed startups quantify user
+              feedback and center their development processes around it.
             </div>
             <div className="header__email-input">
               <EmailInput />
@@ -307,12 +326,14 @@ const IndexPage: React.FC = () => {
                 Featuring Lessons From
               </label>
               <div className="header__inspiration__logos">
-                {Object.keys(logos).map((logo) => (
+                {Object.keys(logos).map((logo, i) => (
                   <a
                     key={logo}
                     href={logos[logo]}
                     target="_blank"
-                    className={`header__inspiration__logos__logo header__inspiration__logos__logo--${logo}`}
+                    className={`header__inspiration__logos__logo header__inspiration__logos__logo--${logo} ${
+                      i > 4 ? 'drop-at-small' : ''
+                    }`}
                   >
                     <Image
                       src={`logos/${logo}.png`}
@@ -325,12 +346,12 @@ const IndexPage: React.FC = () => {
           </Container>
         </div>
         <Container>
-          <div className="problem">
+          <div className="problem" id="problem">
             <div className="problem__description">
               <h4 className="problem__description__title">
                 <mark>
-                  Product analytics can tell you the <strong>what</strong>.
-                  <br />
+                  Product analytics can tell you the <strong>what</strong>.{' '}
+                  <br className="drop-at-small" />
                   But only user feedback can tell you the <strong>why</strong>.
                 </mark>
               </h4>
@@ -338,8 +359,7 @@ const IndexPage: React.FC = () => {
                 However, it’s hard to quantify user feedback, and easy to let
                 biases creep in how a team shares and interprets user feedback.
                 That’s why every team needs a repeatable process for how they
-                collect, organize, and share it.{' '}
-                <Link to="/problem">Learn how</Link>.
+                collect, organize, and share it.
               </p>
             </div>
             <div className="problem__illustration">

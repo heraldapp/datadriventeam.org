@@ -161,9 +161,9 @@ pre code {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .drop-at-small {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 400px) {
