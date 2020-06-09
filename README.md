@@ -8,11 +8,11 @@ This project maintains a [public roadmap](https://data-driven-team.herald.fyi/).
 
 ## 🚀 Quick start
 
-    Navigate into this directory and start up gatsby.
+Navigate into this directory and start up gatsby:
 
-    ```shell
-    yarn
-    yarn develop
-    ```
+```shell
+yarn
+yarn develop
+```
 
-    Your site is now running at `http://localhost:8000`!
+Your site is now running at `http://localhost:8000`!
