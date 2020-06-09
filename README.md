@@ -1,6 +1,10 @@
-# Data Driven Team
+# 📈 Data Driven Team
 
-**Data driven startups measure how well they listen to customers. Does yours?** This tactical guide presents how customer-obsessed startups quantify user feedback and center their development processes around it.
+[Data Driven Team](https://www.datadriventeam.org) is a tactical guide to how customer-obsessed startups quantify user feedback and center their development processes around it.
+
+## 🗺 Roadmap
+
+This project maintains a [public roadmap](https://data-driven-team.herald.fyi/).
 
 ## 🚀 Quick start
 
