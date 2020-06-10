@@ -40,5 +40,5 @@ It is important to weed out the aforementioned biases. Otherwise, the merits of 
 
 <div class="hint">
 <p>Let us know if you have ideas to improve this guide — we are only an email away
-at hello@datadriventeam.org.</p>
+at hello@heraldhq.com.</p>
 </div>
