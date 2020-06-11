@@ -4,7 +4,7 @@
 
 ## 🗺 Roadmap
 
-This project maintains a [public roadmap](https://data-driven-team.herald.fyi/).
+This project maintains a [public roadmap](https://datadriventeam.herald.fyi/).
 
 ## 🚀 Quick start
 
