@@ -314,7 +314,7 @@ const IndexPage: React.FC = () => {
             <div className="header__tagline">
               An <a href="https://github.com/heraldapp/datadriventeam.org" target="_blank">open source</a>{' '}
               guide on how customer-obsessed startups consolidate, qualify, and quantify customer
-              feedback to form the basis of their product development strategy.
+              feedback to power product development.
             </div>
             <div className="header__email-input">
               <EmailInput />
