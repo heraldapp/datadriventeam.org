@@ -1,6 +1,6 @@
 # 📈 Data Driven Team
 
-[Data Driven Team](https://www.datadriventeam.org) is a tactical guide to how customer-obsessed startups quantify user feedback and center their development processes around it.
+[Data Driven Team](https://www.datadriventeam.org) is an open source guide on how customer-obsessed startups consolidate, qualify, and quantify customer feedback to power product development.
 
 ## 🗺 Roadmap
 
