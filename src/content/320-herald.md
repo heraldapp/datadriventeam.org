@@ -7,10 +7,10 @@ weight: 320
 
 # Herald
 
-Neel and I are taking the ideas presented in this document and building Herald to [empower teams to take a data-driven approach to user feedback](https://www.heraldhq.com). Herald is the [best space for teams to collect, analyze, and collaborate on user feedback](https://www.heraldhq.com) because:
+Neel and I have taken the core ideas presented in this document and built [Herald](https://www.heraldhq.com). Herald helps teams consolidate, qualify, and quantify customer feedback to make data-driven decisions. It is the easiest-to-use solution for your entire team because:
 
-- Our Chrome extension, Slack app, Front plugin, and (coming soon) desktop apps work wherever your customers talk to you.
-- With all feedback in Herald, effortlessly determine the biggest problems facing your customers, including different customer segments.
+- Our browser extensions, Front plugin, and Slack app work wherever your customers talk to you.
+- With all feedback in Herald, one can effortlessly determine the biggest problems facing specific customer segments.
 - Our customizable dashboards, Voice of the Customer report, Slack and issue tracker integrations keep your entire team connected to customer problems and reduce friction in reaching consensus.
 
-We'd love for you to consider [Herald](https://www.heraldhq.com) — reach out and we'd love to help :)
+We'd love for your team to consider adopting [Herald](https://www.heraldhq.com) — reach out and we'd be delighted to help :)

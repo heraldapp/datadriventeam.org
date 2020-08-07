@@ -312,8 +312,9 @@ const IndexPage: React.FC = () => {
           <Container>
             <h1 className="header__title">Data Driven Team</h1>
             <div className="header__tagline">
-              A tactical guide to how customer-obsessed startups quantify user
-              feedback and center their development processes around it.
+              An <a href="https://github.com/heraldapp/datadriventeam.org" target="_blank">open source</a>{' '}
+              guide on how customer-obsessed startups consolidate, qualify, and quantify customer
+              feedback to power product development.
             </div>
             <div className="header__email-input">
               <EmailInput />
