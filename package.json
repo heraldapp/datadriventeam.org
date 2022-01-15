@@ -39,7 +39,7 @@
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
-    "marked": "^0.8.0",
+    "marked": "^4.0.10",
     "null-loader": "^2.0.0",
     "prettier": "^2.0.4",
     "rehype-react": "^5.0.1",
